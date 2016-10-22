@@ -1,0 +1,19 @@
+body {
+    background-color: white;
+}
+h1 {
+	margin: 50px;
+	font-family: courier;
+	font-size: 300%;
+}
+p {
+    color: red;
+}
+pre {
+	font-size: 160%;
+}
+
+pre.quote {
+	font-size: 120%;
+	margin: 50px;
+}
