@@ -59,17 +59,13 @@ Register event listeners to respond to incoming peer events.
 
 {% highlight swift %}
 // Listen to an event
-pcm.listenOn({ event in
-    switch event {
-    case .ReceivedEvent(let peer, let eventInfo):
+pcm.observeEventListenerForKey("someEvent") { (eventInfo, peer) in
 
-        guard let date = eventInfo["EventKey"] as? Date 
-            else { return }
-        print(date)
+    print("Received some event \(eventInfo) from \(peer.displayName)")
+    guard let date = eventInfo["eventKey"] as? Date else { return }
+    print(date)
 
-    default: break
-    }
-}, withKey: "SomeEvent")
+}
 
 // Stop listening to an event
 pcm.removeListenerForKey("SomeEvent")
