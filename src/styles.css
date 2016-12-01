@@ -133,8 +133,15 @@ div.content li { margin-left: 2em; margin-bottom: 0.3em; }
 div.content ul > li { margin-left: 1.4em; }
 
 div.content.centered {
-	margin-left: 0;
+  padding: 30px 30px 30px 30px;
+	margin: 30px 30px 30px 30px;
+  margin-left: 0;
 	text-align: center;
+}
+div.content.centered a h1 { 
+  /*padding: 0 0 0 0; */
+  /*margin: 0 0 0 0;*/
+  /*text-align: center; */
 }
 
 div.post {
