@@ -116,11 +116,16 @@ pre.quote {
 div.indent { margin-left: 10px; }
 div.indent.double { margin-left: 20px; }
 */
+div.indent { margin-top: 10px; width: 100%; margin: 0 auto; }
 
 div.content {
 	margin-left: 4em;
-	margin-top: 130px;
-	margin-bottom: 130px;
+	margin-bottom: 30px; margin-top: 30px;
+  text-align: left;
+}
+
+div.content.top {
+  margin-top: 130px;
 }
 
 /*div.content  { margin-left: 2em; margin-bottom: 0.3em; }*/
@@ -136,7 +141,8 @@ div.post {
 	height: auto;
 	width: 750px;
 	margin: 0 auto; 
-	margin-bottom: 0.3em;
+	margin-bottom: 2em;
+  text-align: left;
 }
 
 div.post-list {
@@ -146,4 +152,7 @@ div.post-list {
 footer {
 	width: 100%;
 	text-align: center;
+  margin-bottom: 100px;
+
 }
+
