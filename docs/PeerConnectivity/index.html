@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PeerConnectivity  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="PeerConnectivity  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">PeerConnectivity Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">PeerConnectivity Reference</a>
+        <img id="carat" src="img/carat.png" />
+        PeerConnectivity  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/PeerConnectionManager.html">PeerConnectionManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/PeerBrowserViewControllerEvent.html">PeerBrowserViewControllerEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PeerConnectionEvent.html">PeerConnectionEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PeerConnectionType.html">PeerConnectionType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/Peer.html">Peer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Peer/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:V16PeerConnectivity20PeerConnectivityKeys">PeerConnectivityKeys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Typealiases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:16PeerConnectivity27PeerConnectionEventListener">PeerConnectionEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:16PeerConnectivity11ServiceType">ServiceType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p><img src="http://reidchatham.com/src/PeerConnectivity.png" alt="PeerConnectivity"></p>
+
+<p><a href=""><img src="https://img.shields.io/badge/platform-iOS%208%2B-blue.svg?style=flat" alt="Platform: iOS 8+"></a>
+<a href="https://developer.apple.com/swift"><img src="https://img.shields.io/badge/language-swift3-f48041.svg?style=flat" alt="Language: Swift 3"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
+<a href="https://cocoapods.org/pods/PeerConnectivity"><img src="https://cocoapod-badges.herokuapp.com/v/PeerConnectivity/badge.png" alt="Cocoapods compatible"></a>
+<a href="http://cocoadocs.org/docsets/PeerConnectivity"><img src="https://img.shields.io/cocoapods/metrics/doc-percent/PeerConnectivity.svg" alt="Docs"></a>
+<a href=""><img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT"></a></p>
+<a href='#a-functional-wrapper-for-the-multipeerconnectivity-framework' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='a-functional-wrapper-for-the-multipeerconnectivity-framework'>A functional wrapper for the MultipeerConnectivity framework.</h4>
+<a href='#peerconnectivity-is-meant-to-have-a-lightweight-easy-to-use-syntax-be-extensible-and-flexible-and-handle-the-heavy-lifting-and-edge-cases-of-the-multipeerconnectivity-framework-quietly-in-the-background' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='peerconnectivity-is-meant-to-have-a-lightweight-easy-to-use-syntax-be-extensible-and-flexible-and-handle-the-heavy-lifting-and-edge-cases-of-the-multipeerconnectivity-framework-quietly-in-the-background'>PeerConnectivity is meant to have a lightweight easy to use syntax, be extensible and flexible, and handle the heavy lifting and edge cases of the MultipeerConnectivity framework quietly in the background.</h4>
+<a href='#please-open-an-issue-or-submit-a-pull-request-if-you-have-any-suggestions' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='please-open-an-issue-or-submit-a-pull-request-if-you-have-any-suggestions'>Please open an issue or submit a pull request if you have any suggestions!</h5>
+<a href='#check-out-the-playground' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h5 id='check-out-the-playground'>Check out the Playground!</h5>
+<a href='#blog-post-a-href-https-goo-gl-hjcmbe-https-goo-gl-hjcmbe-a' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='blog-post-a-href-https-goo-gl-hjcmbe-https-goo-gl-hjcmbe-a'>Blog post <a href="https://goo.gl/HJcMbE">https://goo.gl/HJcMbE</a></h4>
+<a href='#read-the-a-href-http-cocoadocs-org-docsets-peerconnectivity-docs-a' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='read-the-a-href-http-cocoadocs-org-docsets-peerconnectivity-docs-a'>Read the <a href="http://cocoadocs.org/docsets/PeerConnectivity">docs!</a></h4>
+<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
+
+<p>The easiest way to get started is to use <a href="http://cocoapods.org/">CocoaPods</a>. Just add the following line to your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'PeerConnectivity'</span><span class="p">,</span> <span class="s1">'~&gt; 0.5.3'</span>
+</code></pre>
+<a href='#carthage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='carthage'>Carthage</h4>
+<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"rchatham/PeerConnectivity"</span>
+</code></pre>
+<a href='#creating-stopping-starting' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='creating-stopping-starting'>Creating/Stopping/Starting</h2>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">pcm</span> <span class="o">=</span> <span class="kt">PeerConnectionManager</span><span class="p">(</span><span class="nv">serviceType</span><span class="p">:</span> <span class="s">"local"</span><span class="p">)</span>
+
+<span class="c1">// Start</span>
+<span class="n">pcm</span><span class="o">.</span><span class="nf">start</span><span class="p">()</span>
+
+<span class="c1">// Stop</span>
+<span class="c1">//  - You should always stop the connection manager </span>
+<span class="c1">//    before attempting to create a new one</span>
+<span class="n">pcm</span><span class="o">.</span><span class="nf">stop</span><span class="p">()</span>
+
+<span class="c1">// Can join chatrooms using PeerConnectionType.Automatic, .InviteOnly, and .Custom</span>
+<span class="c1">//  - .Automatic : automatically searches and joins other devices with the same service type</span>
+<span class="c1">//  - .InviteOnly : provides a browserViewController and invite alert controllers</span>
+<span class="c1">//  - .Custom : no default behavior is implemented</span>
+
+<span class="c1">// The manager can be initialized with a contructed peer representing the local user</span>
+<span class="c1">// with a custom displayName</span>
+
+<span class="n">pcm</span> <span class="o">=</span> <span class="kt">PeerConnectionManager</span><span class="p">(</span><span class="nv">serviceType</span><span class="p">:</span> <span class="s">"local"</span><span class="p">,</span> <span class="nv">connectionType</span><span class="p">:</span> <span class="o">.</span><span class="kt">Automatic</span><span class="p">,</span> <span class="nv">displayName</span><span class="p">:</span> <span class="s">"I_AM_KING"</span><span class="p">)</span>
+
+<span class="c1">// Start again at any time</span>
+<span class="n">pcm</span><span class="o">.</span><span class="nf">start</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Do something when finished starting the session</span>
+<span class="p">}</span>
+</code></pre>
+<a href='#sending-events-to-peers' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='sending-events-to-peers'>Sending Events to Peers</h2>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">event</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s">"EventKey"</span> <span class="p">:</span> <span class="kt">Date</span><span class="p">()</span>
+<span class="p">]</span>
+
+<span class="c1">// Sends to all connected peers</span>
+<span class="n">pcm</span><span class="o">.</span><span class="nf">sendEvent</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
+
+
+<span class="c1">// Use this to access the connectedPeers</span>
+<span class="k">let</span> <span class="nv">connectedPeers</span><span class="p">:</span> <span class="p">[</span><span class="kt">Peer</span><span class="p">]</span> <span class="o">=</span> <span class="n">pcm</span><span class="o">.</span><span class="n">connectedPeers</span>
+
+<span class="c1">// Events can be sent to specific peers</span>
+<span class="k">if</span> <span class="k">let</span> <span class="nv">somePeerThatIAmConnectedTo</span> <span class="o">=</span> <span class="n">connectedPeers</span><span class="o">.</span><span class="n">first</span> <span class="p">{</span>
+   <span class="n">pcm</span><span class="o">.</span><span class="nf">sendEvent</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="nv">toPeers</span><span class="p">:</span> <span class="p">[</span><span class="n">somePeerThatIAmConnectedTo</span><span class="p">])</span>
+<span class="p">}</span>
+</code></pre>
+<a href='#listening-for-events' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='listening-for-events'>Listening for Events</h2>
+<pre class="highlight swift"><code><span class="c1">// Listen to an event</span>
+<span class="n">pcm</span><span class="o">.</span><span class="nf">observeEventListenerForKey</span><span class="p">(</span><span class="s">"someEvent"</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="n">eventInfo</span><span class="p">,</span> <span class="n">peer</span><span class="p">)</span> <span class="k">in</span>
+
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Received some event </span><span class="se">\(</span><span class="n">eventInfo</span><span class="se">)</span><span class="s"> from </span><span class="se">\(</span><span class="n">peer</span><span class="o">.</span><span class="n">displayName</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+    <span class="k">guard</span> <span class="k">let</span> <span class="nv">date</span> <span class="o">=</span> <span class="n">eventInfo</span><span class="p">[</span><span class="s">"eventKey"</span><span class="p">]</span> <span class="k">as?</span> <span class="kt">Date</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="p">}</span>
+    <span class="nf">print</span><span class="p">(</span><span class="n">date</span><span class="p">)</span>
+
+<span class="p">}</span>
+
+<span class="c1">// Stop listening to an event</span>
+<span class="n">pcm</span><span class="o">.</span><span class="nf">removeListenerForKey</span><span class="p">(</span><span class="s">"SomeEvent"</span><span class="p">)</span>
+</code></pre>
+<a href='#acknowledgments' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='acknowledgments'>Acknowledgments</h2>
+
+<p>Icon from the <a href="https://thenounproject.com/search/?q=circle+people&amp;i=125108">Noun Project</a>.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/rchatham/PeerConnectivity" target="_blank" rel="external">Reid Chatham</a>. All rights reserved. (Last updated: 2016-12-01)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

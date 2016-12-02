@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PeerConnectionManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/PeerConnectionManager" class="dashAnchor"></a>
+    <a title="PeerConnectionManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PeerConnectivity Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PeerConnectivity Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PeerConnectionManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PeerConnectionManager.html">PeerConnectionManager</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/PeerBrowserViewControllerEvent.html">PeerBrowserViewControllerEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PeerConnectionEvent.html">PeerConnectionEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PeerConnectionType.html">PeerConnectionType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Peer.html">Peer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Peer/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:V16PeerConnectivity20PeerConnectivityKeys">PeerConnectivityKeys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Typealiases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:16PeerConnectivity27PeerConnectionEventListener">PeerConnectionEventListener</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:16PeerConnectivity11ServiceType">ServiceType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PeerConnectionManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PeerConnectionManager</span></code></pre>
+
+                </div>
+              </div>
+            <p>Functional wrapper for Apple&rsquo;s MultipeerConnectivity framework.</p>
+
+<p>Initialize a PeerConnectionManager to enable mesh-networking over bluetooth and wifi when available. Configure the networking protocol of the session and then start to begin connecting to nearby peers.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Static"></a>
+                <a name="//apple_ref/swift/Section/Static" class="dashAnchor"></a>
+                <a href="#/Static">
+                  <h3 class="section-name">Static</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC16PeerConnectivity21PeerConnectionManager6sharedGVs10DictionarySSS0__"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC16PeerConnectivity21PeerConnectionManager6sharedGVs10DictionarySSS0__">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Access to shared connection managers by their service type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">fileprivate</span><span class="p">(</span><span class="k">set</span><span class="p">)</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">shared</span> <span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Typealiases.html#/s:16PeerConnectivity11ServiceType">ServiceType</a></span><span class="p">:</span><span class="kt">PeerConnectionManager</span><span class="p">]</span> <span class="o">=</span> <span class="p">[:]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC16PeerConnectivity21PeerConnectionManager14connectionTypeOS_18PeerConnectionType"></a>
+                    <a name="//apple_ref/swift/Property/connectionType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC16PeerConnectivity21PeerConnectionManager14connectionTypeOS_18PeerConnectionType">connectionType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The connection type for the connection manager. (ex. <code>.automatic</code>, <code>.inviteOnly</code>, <code>.custom</code>)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">connectionType</span> <span class="p">:</span> <span class="kt"><a href="../Enums/PeerConnectionType.html">PeerConnectionType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC16PeerConnectivity21PeerConnectionManager4peerVS_4Peer"></a>
+                    <a name="//apple_ref/swift/Property/peer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC16PeerConnectivity21PeerConnectionManager4peerVS_4Peer">peer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Access to the local peer representing the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">peer</span> <span class="p">:</span> <span class="kt"><a href="../Structs/Peer.html">Peer</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC16PeerConnectivity21PeerConnectionManager14connectedPeersGSaVS_4Peer_"></a>
+                    <a name="//apple_ref/swift/Property/connectedPeers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC16PeerConnectivity21PeerConnectionManager14connectedPeersGSaVS_4Peer_">connectedPeers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the peers that are connected on the current session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">connectedPeers</span> <span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Peer.html">Peer</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC16PeerConnectivity21PeerConnectionManager10foundPeersGSaVS_4Peer_"></a>
+                    <a name="//apple_ref/swift/Property/foundPeers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC16PeerConnectivity21PeerConnectionManager10foundPeersGSaVS_4Peer_">foundPeers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Nearby peers available for connecting.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">fileprivate</span><span class="p">(</span><span class="k">set</span><span class="p">)</span> <span class="k">var</span> <span class="nv">foundPeers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Peer.html">Peer</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializer"></a>
+                <a name="//apple_ref/swift/Section/Initializer" class="dashAnchor"></a>
+                <a href="#/Initializer">
+                  <h3 class="section-name">Initializer</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManagercFT11serviceTypeSS14connectionTypeOS_18PeerConnectionType11displayNameSS_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(serviceType:connectionType:displayName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManagercFT11serviceTypeSS14connectionTypeOS_18PeerConnectionType11displayNameSS_S0_">init(serviceType:connectionType:displayName:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializer for a connection manager. Requires the requested service type. If the connectionType and displayName are not specified the connection manager defaults to .Automatic and using the local device name.</p>
+
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    <p>A fully initialized <code>PeerConnectionManager</code>.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">serviceType</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:16PeerConnectivity11ServiceType">ServiceType</a></span><span class="p">,</span>
+                <span class="nv">connectionType</span><span class="p">:</span> <span class="kt"><a href="../Enums/PeerConnectionType.html">PeerConnectionType</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">automatic</span><span class="p">,</span>
+                <span class="nv">displayName</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="kt">UIDevice</span><span class="o">.</span><span class="n">current</span><span class="o">.</span><span class="n">name</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>serviceType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The requested service type describing the channel on which peers are able to connect.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>connectionType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Takes a PeerConnectionType case determining the default behavior of the framework.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>displayName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The local user’s display name to other peers.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A fully initialized <code>PeerConnectionManager</code>.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Using%20the%20PeerConnectionManager"></a>
+                <a name="//apple_ref/swift/Section/Using the PeerConnectionManager" class="dashAnchor"></a>
+                <a href="#/Using%20the%20PeerConnectionManager">
+                  <h3 class="section-name">Using the PeerConnectionManager</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager5startFGSqFT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/start(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager5startFGSqFT_T__T_">start(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start the connection manager with optional completion. Calling this initiates browsing and advertising using the specified connection type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">start</span><span class="p">(</span><span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Void</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called once session is initialized. Default is <code>nil</code>.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager21browserViewControllerFFOS_30PeerBrowserViewControllerEventT_GSqCSo16UIViewController_"></a>
+                    <a name="//apple_ref/swift/Method/browserViewController(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager21browserViewControllerFFOS_30PeerBrowserViewControllerEventT_GSqCSo16UIViewController_">browserViewController(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a browser view controller if the connectionType was set to <code>.InviteOnly</code> or returns <code>nil</code> if not.</p>
+
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    <p>A browser view controller for inviting available peers nearby if connection type is <code>.InviteOnly</code> or <code>nil</code> otherwise.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">browserViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/PeerBrowserViewControllerEvent.html">PeerBrowserViewControllerEvent</a></span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Events sent back with cases <code>.DidFinish</code> and <code>.DidCancel</code>.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A browser view controller for inviting available peers nearby if connection type is <code>.InviteOnly</code> or <code>nil</code> otherwise.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager10invitePeerFTVS_4Peer11withContextGSqV10Foundation4Data_7timeoutSd_T_"></a>
+                    <a name="//apple_ref/swift/Method/invitePeer(_:withContext:timeout:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager10invitePeerFTVS_4Peer11withContextGSqV10Foundation4Data_7timeoutSd_T_">invitePeer(_:withContext:timeout:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use to invite peers that have been found locally to join a MultipeerConnectivity session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">invitePeer</span><span class="p">(</span><span class="n">_</span> <span class="nv">peer</span><span class="p">:</span> <span class="kt"><a href="../Structs/Peer.html">Peer</a></span><span class="p">,</span> <span class="n">withContext</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt">TimeInterval</span> <span class="o">=</span> <span class="mi">30</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>peer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Peer</code> object to invite to current session.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>withContext</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Data</code> object associated with the invitation.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timeout</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Time interval until the invitation expires.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager8sendDataFTV10Foundation4Data7toPeersGSaVS_4Peer__T_"></a>
+                    <a name="//apple_ref/swift/Method/sendData(_:toPeers:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager8sendDataFTV10Foundation4Data7toPeersGSaVS_4Peer__T_">sendData(_:toPeers:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Send data to connected users. If no peer is specified it broadcasts to all users on a current session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendData</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="n">toPeers</span> <span class="nv">peers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Peer.html">Peer</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Data to be sent to specified peers.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toPeers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Specified <code>Peer</code> objects to send data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager9sendEventFTGVs10DictionarySSP__7toPeersGSaVS_4Peer__T_"></a>
+                    <a name="//apple_ref/swift/Method/sendEvent(_:toPeers:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager9sendEventFTGVs10DictionarySSP__7toPeersGSaVS_4Peer__T_">sendEvent(_:toPeers:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Send events to connected users. Encoded as Data using the NSKeyedArchiver. If no peer is specified it broadcasts to all users on a current session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendEvent</span><span class="p">(</span><span class="n">_</span> <span class="nv">eventInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span><span class="kt">Any</span><span class="p">],</span> <span class="n">toPeers</span> <span class="nv">peers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Peer.html">Peer</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>eventInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Dictionary of Any data which is encoded with the NSKeyedArchiver and passed to the specified peers.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toPeers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Specified <code>Peer</code> objects to send event.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager14sendDataStreamFzT10streamNameSS6toPeerVS_4Peer_CSo12OutputStream"></a>
+                    <a name="//apple_ref/swift/Method/sendDataStream(streamName:toPeer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager14sendDataStreamFzT10streamNameSS6toPeerVS_4Peer_CSo12OutputStream">sendDataStream(streamName:toPeer:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Send a data stream to a connected user. This method throws an error if the stream cannot be established. This method returns the NSOutputStream with which you can send events to the connected users.</p>
+
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p>Propagates errors thrown by Apple&rsquo;s MultipeerConnectivity framework.</p>
+
+</div>
+
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    <p>The OutputStream for sending information to the specified <code><a href="../Structs/Peer.html">Peer</a></code> object.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendDataStream</span><span class="p">(</span><span class="n">streamName</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">toPeer</span> <span class="nv">peer</span><span class="p">:</span> <span class="kt"><a href="../Structs/Peer.html">Peer</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">OutputStream</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>streamName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name of the stream to be established between two users.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toPeer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The peer with which to start a data stream</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The OutputStream for sending information to the specified <code><a href="../Structs/Peer.html">Peer</a></code> object.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager17sendResourceAtURLFTV10Foundation3URL8withNameSS7toPeersGSaVS_4Peer_21withCompletionHandlerGSqFGSqPs5Error__T___GVs10DictionaryS3_GSqCSo8Progress__"></a>
+                    <a name="//apple_ref/swift/Method/sendResourceAtURL(_:withName:toPeers:withCompletionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager17sendResourceAtURLFTV10Foundation3URL8withNameSS7toPeersGSaVS_4Peer_21withCompletionHandlerGSqFGSqPs5Error__T___GVs10DictionaryS3_GSqCSo8Progress__">sendResourceAtURL(_:withName:toPeers:withCompletionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Send a resource with a specified url for retrieval on a connected device. This method can send a resource to multiple peers and returns an Progress associated with each Peer. This method takes an error completion handler if the resource fails to send.</p>
+
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    <p>A dictionary of optional Progress associated with each peer that the resource was sent to.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendResourceAtURL</span><span class="p">(</span><span class="n">_</span> <span class="nv">resourceURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="n">withName</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">toPeers</span> <span class="nv">peers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Peer.html">Peer</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="n">withCompletionHandler</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/Peer.html">Peer</a></span><span class="p">:</span><span class="kt">Progress</span><span class="p">?]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resourceURL</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The url that the resource will be passed with for retrieval.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>withName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The name with which the progress is associated with.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>toPeers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The specified peers for the resource to be sent to.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>withCompletionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion handler called when an error is thrown sending a resource.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A dictionary of optional Progress associated with each peer that the resource was sent to.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager7refreshFGSqFT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/refresh(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager7refreshFGSqFT_T__T_">refresh(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Refresh the current session. This call disconnects the user from the current session and then restarts the session with completion maintaing the current sessions configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refresh</span><span class="p">(</span><span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Void</span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Completion handler called after the session has completed refreshing.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager4stopFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/stop()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager4stopFT_T_">stop()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stop the current connection manager from listening to delegate callbacks and disconnects from the current session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stop</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager12closeSessionFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/closeSession()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager12closeSessionFT_T_">closeSession()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Close session for browsing peers to invite.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">closeSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager11openSessionFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/openSession()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager11openSessionFT_T_">openSession()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Open session for browsing peers to invite.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">openSession</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Listening%20to%20PeerConnectivity%20generated%20events"></a>
+                <a name="//apple_ref/swift/Section/Listening to PeerConnectivity generated events" class="dashAnchor"></a>
+                <a href="#/Listening%20to%20PeerConnectivity%20generated%20events">
+                  <h3 class="section-name">Listening to PeerConnectivity generated events</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager8listenOnFTFOS_19PeerConnectionEventT_27performListenerInBackgroundSb7withKeySS_T_"></a>
+                    <a name="//apple_ref/swift/Method/listenOn(_:performListenerInBackground:withKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager8listenOnFTFOS_19PeerConnectionEventT_27performListenerInBackgroundSb7withKeySS_T_">listenOn(_:performListenerInBackground:withKey:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Takes a <code><a href="../Typealiases.html#/s:16PeerConnectivity27PeerConnectionEventListener">PeerConnectionEventListener</a></code> to respond to events.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">listenOn</span><span class="p">(</span><span class="n">_</span> <span class="nv">listener</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:16PeerConnectivity27PeerConnectionEventListener">PeerConnectionEventListener</a></span><span class="p">,</span> <span class="n">performListenerInBackground</span> <span class="nv">background</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="n">withKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Takes a <code>PeerConnectionEventListener</code>.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>performListenerInBackground</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Default is <code>false</code>. Set to <code>true</code> to perform the listener asyncronously.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>withKey</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key with which to associate the listener.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager26observeEventListenerForKeyFTSS8listenerFTGVs10DictionarySSP__VS_4Peer_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/observeEventListenerForKey(_:listener:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager26observeEventListenerForKeyFTSS8listenerFTGVs10DictionarySSP__VS_4Peer_T__T_">observeEventListenerForKey(_:listener:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Takes a key to register the callback and calls the listener when an event is recieved and also passes back the <code><a href="../Structs/Peer.html">Peer</a></code> that sent it.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">observeEventListenerForKey</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">listener</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">([</span><span class="kt">String</span><span class="p">:</span><span class="kt">Any</span><span class="p">],</span> <span class="kt"><a href="../Structs/Peer.html">Peer</a></span><span class="p">)</span><span class="o">-&gt;</span><span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>String</code> key with which to keep track of the listener for later removal.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>listener</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Callback that returns the event info and the <code>Peer</code> whenever an event is received.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager20removeListenerForKeyFSST_"></a>
+                    <a name="//apple_ref/swift/Method/removeListenerForKey(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager20removeListenerForKeyFSST_">removeListenerForKey(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove a listener associated with a specified key.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeListenerForKey</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key with which to attempt to find and remove a listener with.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC16PeerConnectivity21PeerConnectionManager18removeAllListenersFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/removeAllListeners()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC16PeerConnectivity21PeerConnectionManager18removeAllListenersFT_T_">removeAllListeners()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove all listeners.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeAllListeners</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/rchatham/PeerConnectivity" target="_blank" rel="external">Reid Chatham</a>. All rights reserved. (Last updated: 2016-12-01)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
