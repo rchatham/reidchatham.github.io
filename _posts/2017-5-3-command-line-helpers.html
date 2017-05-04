@@ -1,0 +1,560 @@
+---
+layout: post
+title: Command Line Helpers
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="note-wrapper">
+            <h1>Command Line Helpers</h1>
+<br>
+<p><b>NAVIGATION</b></p>
+<p>Get the current directory’s path</p>
+<p><code class='code-inline'>pwd</code></p>
+<br>
+<p>List the files in the current directory</p>
+<p><code class='code-inline'>ls</code></p>
+<br>
+<p>Change directory</p>
+<p><code class='code-inline'>cd                    # exits to the root directory</code></p>
+<p><code class='code-inline'>cd ‘NameOfDirectory’  # changes to the specified directory</code></p>
+<p><code class='code-inline'>cd ..                 # backs out of the current directory</code></p>
+<br>
+<p>Make directory</p>
+<p><code class='code-inline'>mkdir ‘NameOfDirectory’ # creates a directory with the given name within the current scope</code></p>
+<br>
+<hr>
+<p><b>GIT</b></p>
+<p>Check which files have been changed in the directory</p>
+<p><code class='code-inline'>git status</code></p>
+<br>
+<p>Pull remote changes on a branch</p>
+<p><code class='code-inline'>git pull</code></p>
+<br>
+<p>Add current changes to next commit</p>
+<p><code class='code-inline'>git add -A</code></p>
+<br>
+<p>Commit added changes to local .git repository</p>
+<p><code class='code-inline'>git commit -m "some message about commit"</code></p>
+<br>
+<p>Push changes to remote repository</p>
+<p><code class='code-inline'>git push</code></p>
+<br>
+<p>See changes by file</p>
+<p><code class='code-inline'>git diff</code></p>
+<br>
+<p>Removed tracked files after being added to .gitignore</p>
+<p><code class='code-inline'>git rm -r --cached .</code></p>
+<p><code class='code-inline'>git add .</code></p>
+<p><code class='code-inline'>git commit -m "removed untracked files"</code></p>
+<br>
+<p>Return list of local branches</p>
+<p><code class='code-inline'>git branch</code></p>
+<br>
+<p>Checkout a local branch</p>
+<p><code class='code-inline'>git checkout branch-name</code></p>
+<br>
+<p>Create a new branch <i>!TIP! - This will include your uncommitted changes</i></p>
+<p><code class='code-inline'>git checkout -b branch-name</code>  </p>
+<br>
+<p>Stash your current changes to apply later or on a different branch.</p>
+<p><code class='code-inline'>git stash</code></p>
+<br>
+<p>Apply your stashed changes to the current branch.</p>
+<p><code class='code-inline'>git stash apply</code></p>
+<br>
+<p>Edit your commit history.</p>
+<p><code class='code-inline'>git rebase -i HEAD~<number-of-commits-to-rebase></code></p>
+<br>
+<hr>
+<p><b>!!!TIP!!!</b></p>
+<p>First install Sublime text editor. (<a href="https://www.sublimetext.com/">https://www.sublimetext.com/</a>) Aliases work equally with other programs.</p>
+<p>Then alias Sublime text editor by adding this to your .bash_profile</p>
+<p><code class='code-inline'>alias sublime="open -a /Applications/Sublime\ Text\.app"</code></p>
+<br>
+<p>Call this to make the changes affect your current terminal session</p>
+<p><code class='code-inline'>source ~/.bash_profile</code></p>
+<br>
+<p>Then call your new command to open the user level directory in sublime. I have my .bash_profile open here showing my alias for Sublime along with an alias for Xcode.</p>
+<p><code class='code-inline'>sublime ~/</code></p>
+<br>
+<p>This will show all of your local system files and folders that even finder wont show including your profiles.</p>
+<p><a href='2017-5-3-command-line-helpers/bash-alias-example'>bash-alias-example</a></p>
+<br>
+<hr>
+<p><b>BASH</b></p>
+<p>Switch from alternate cli</p>
+<p><code class='code-inline'>exec bash</code></p>
+<br>
+<p>Profile</p>
+<p><code class='code-inline'>~/.bash_profile</code></p>
+<br>
+<hr>
+<p><b>ZSH</b></p>
+<p>Switch from alternate cli</p>
+<p><code class='code-inline'>exec zsh</code></p>
+<br>
+<p>Profile</p>
+<p><code class='code-inline'>~/.zshrc</code></p>
+<br>
+<hr>
+<p><b>APT</b></p>
+<p>Check list of installed packages via apt-get</p>
+<p><code class='code-inline'>apt list -—installed</code></p>
+
+        </div>
+
+<style>
+  
+code {
+  font-family: "Menlo-Regular";
+}
+
+.code-inline {
+  display: inline-block;
+  background: white;
+  border: solid 1px #dedede;
+  padding: 0.0em 0.5em;
+  font-size: 0.9em;
+}
+
+
+
+</style>
+
+
+        <!-- 
+
+        <style>
+            @charset "UTF-8";
+/* line 5, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 8, ../Sass/sass/utilities/_common-import.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 106, ../../../../../../../.rvm/gems/ruby-2.3.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 87.5%;
+  line-height: 1.57143em;
+}
+
+/* line 8, ../Sass/sass/partials/_typography.scss */
+html {
+  font-size: 14px;
+  line-height: 1.6em;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 14, ../Sass/sass/partials/_typography.scss */
+body {
+  background: #fcfcfc;
+  color: #545454;
+  text-rendering: optimizeLegibility;
+  font-family: "Avenir-Book";
+}
+
+/* line 21, ../Sass/sass/partials/_typography.scss */
+a {
+  color: #de4c4f;
+  text-decoration: none;
+}
+
+/* line 26, ../Sass/sass/partials/_typography.scss */
+h1 {
+  font-family: "Avenir-Medium";
+  color: #333333;
+  font-size: 1.6em;
+  line-height: 1.3em;
+  margin-bottom: 0.78571em;
+}
+
+/* line 34, ../Sass/sass/partials/_typography.scss */
+h2 {
+  font-family: "Avenir-Medium";
+  color: #333333;
+  font-size: 1.3em;
+  line-height: 1em;
+  margin-bottom: 0.62857em;
+}
+
+/* line 44, ../Sass/sass/partials/_typography.scss */
+h3 {
+  font-family: "Avenir-Medium";
+  color: #333333;
+  font-size: 1.15em;
+  line-height: 1em;
+  margin-bottom: 0.47143em;
+}
+
+/* line 53, ../Sass/sass/partials/_typography.scss */
+p {
+  margin-bottom: 1.57143em;
+  hyphens: auto;
+}
+
+/* line 58, ../Sass/sass/partials/_typography.scss */
+hr {
+  height: 1px;
+  border: 0;
+  background-color: #dedede;
+  margin: -1px auto 1.57143em auto;
+}
+
+/* line 66, ../Sass/sass/partials/_typography.scss */
+ul, ol {
+  margin-bottom: 1.57143em;
+}
+/* line 68, ../Sass/sass/partials/_typography.scss */
+ul ul, ul ol, ol ul, ol ol {
+  margin-bottom: 0px;
+}
+
+/* line 73, ../Sass/sass/partials/_typography.scss */
+b, strong {
+  font-family: "Avenir-Heavy";
+}
+
+/* line 77, ../Sass/sass/partials/_typography.scss */
+i, em {
+  font-family: "Avenir-BookOblique";
+}
+
+/* line 81, ../Sass/sass/partials/_typography.scss */
+code {
+  font-family: "Menlo-Regular";
+}
+
+/* line 87, ../Sass/sass/partials/_typography.scss */
+.text-overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* line 5, ../Sass/sass/partials/_code.scss */
+.sf_code_syntax_string {
+  color: #D33905;
+}
+
+/* line 7, ../Sass/sass/partials/_code.scss */
+.sf_code_syntax_comment {
+  color: #838383;
+}
+
+/* line 9, ../Sass/sass/partials/_code.scss */
+.sf_code_syntax_documentation_comment {
+  color: #128901;
+}
+
+/* line 11, ../Sass/sass/partials/_code.scss */
+.sf_code_syntax_number {
+  color: #0E73A2;
+}
+
+/* line 13, ../Sass/sass/partials/_code.scss */
+.sf_code_syntax_project {
+  color: #5B2599;
+}
+
+/* line 15, ../Sass/sass/partials/_code.scss */
+.sf_code_syntax_keyword {
+  color: #0E73A2;
+}
+
+/* line 17, ../Sass/sass/partials/_code.scss */
+.sf_code_syntax_character {
+  color: #1B00CE;
+}
+
+/* line 19, ../Sass/sass/partials/_code.scss */
+.sf_code_syntax_preprocessor {
+  color: #920448;
+}
+
+/* line 9, ../Sass/sass/HTMLExport.scss */
+.note-wrapper {
+  max-width: 46em;
+  margin: 0px auto;
+  padding: 1.57143em 3.14286em;
+}
+/* line 14, ../Sass/sass/HTMLExport.scss */
+.note-wrapper.spotlight-preview {
+  overflow-x: hidden;
+}
+
+/* line 19, ../Sass/sass/HTMLExport.scss */
+u {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #e06e73 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0 1.05em;
+}
+
+/* line 24, ../Sass/sass/HTMLExport.scss */
+s {
+  color: #878787;
+}
+
+/* line 28, ../Sass/sass/HTMLExport.scss */
+p {
+  margin-bottom: 0.1em;
+}
+
+/* line 32, ../Sass/sass/HTMLExport.scss */
+hr {
+  margin-bottom: 0.7em;
+  margin-top: 0.7em;
+}
+
+/* line 38, ../Sass/sass/HTMLExport.scss */
+ul li {
+  text-indent: -0.6em;
+}
+/* line 40, ../Sass/sass/HTMLExport.scss */
+ul li:before {
+  content: "•";
+  color: #e06e73;
+  display: inline-block;
+  margin-right: 0.3em;
+}
+/* line 47, ../Sass/sass/HTMLExport.scss */
+ul ul {
+  margin-left: 1.25714em;
+}
+
+/* line 53, ../Sass/sass/HTMLExport.scss */
+ol li {
+  text-indent: -1.55em;
+}
+/* line 56, ../Sass/sass/HTMLExport.scss */
+ol ol {
+  margin-left: 1.25714em;
+}
+
+/* line 61, ../Sass/sass/HTMLExport.scss */
+blockquote {
+  display: block;
+  margin-left: -1em;
+  padding-left: 0.8em;
+  border-left: 0.2em solid #e06e73;
+}
+
+/* line 70, ../Sass/sass/HTMLExport.scss */
+.todo-list ul {
+  margin-left: 1.88571em;
+}
+/* line 74, ../Sass/sass/HTMLExport.scss */
+.todo-list li {
+  text-indent: -1.75em;
+}
+/* line 77, ../Sass/sass/HTMLExport.scss */
+.todo-list li:before {
+  content: "";
+  display: static;
+  margin-right: 0px;
+}
+
+/* line 85, ../Sass/sass/HTMLExport.scss */
+.todo-checkbox {
+  text-indent: -1.7em;
+}
+/* line 88, ../Sass/sass/HTMLExport.scss */
+.todo-checkbox svg {
+  margin-right: 0.3em;
+  position: relative;
+  top: 0.2em;
+}
+/* line 93, ../Sass/sass/HTMLExport.scss */
+.todo-checkbox svg #check {
+  display: none;
+}
+/* line 98, ../Sass/sass/HTMLExport.scss */
+.todo-checkbox.todo-checked #check {
+  display: inline;
+}
+/* line 101, ../Sass/sass/HTMLExport.scss */
+.todo-checkbox.todo-checked .todo-text {
+  text-decoration: line-through;
+  color: #878787;
+}
+
+/* line 108, ../Sass/sass/HTMLExport.scss */
+.code-inline {
+  display: inline-block;
+  background: white;
+  border: solid 1px #dedede;
+  padding: 0.0em 0.5em;
+  font-size: 0.9em;
+}
+
+/* line 116, ../Sass/sass/HTMLExport.scss */
+.code-multiline {
+  display: block;
+  background: white;
+  border: solid 1px #dedede;
+  padding: 0.7em 1em;
+  font-size: 0.9em;
+  overflow-x: auto;
+}
+
+/* line 125, ../Sass/sass/HTMLExport.scss */
+.hashtag {
+  display: inline-block;
+  color: white;
+  background: #b8bfc2;
+  padding: 0.0em 0.5em;
+  border-radius: 1em;
+}
+/* line 131, ../Sass/sass/HTMLExport.scss */
+.hashtag a {
+  color: white;
+}
+
+/* line 138, ../Sass/sass/HTMLExport.scss */
+.address a {
+  color: #545454;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #0da35e 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0 1.05em;
+}
+/* line 143, ../Sass/sass/HTMLExport.scss */
+.address svg {
+  position: relative;
+  top: 0.2em;
+  display: inline-block;
+  margin-right: 0.2em;
+}
+
+/* line 151, ../Sass/sass/HTMLExport.scss */
+.color-preview {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  margin-right: 0.1em;
+  position: relative;
+  top: 0.2em;
+  white-space: nowrap;
+}
+
+/* line 163, ../Sass/sass/HTMLExport.scss */
+.color-code {
+  margin-right: 0.2em;
+  font-family: "Menlo-Regular";
+  font-size: 0.9em;
+}
+
+/* line 169, ../Sass/sass/HTMLExport.scss */
+.color-hash {
+  opacity: 0.4;
+}
+
+/* line 177, ../Sass/sass/HTMLExport.scss */
+.ordered-list-number {
+  color: #e06e73;
+  text-align: right;
+  display: inline-block;
+  min-width: 1em;
+}
+
+/* line 186, ../Sass/sass/HTMLExport.scss */
+.arrow svg {
+  position: relative;
+  top: 0.08em;
+  display: inline-block;
+  margin-right: 0.15em;
+  margin-left: 0.15em;
+}
+/* line 193, ../Sass/sass/HTMLExport.scss */
+.arrow svg #rod {
+  stroke: #545454;
+}
+/* line 194, ../Sass/sass/HTMLExport.scss */
+.arrow svg #point {
+  fill: #545454;
+}
+
+/* line 198, ../Sass/sass/HTMLExport.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+        </style> -->
+    </body>
+</html>
