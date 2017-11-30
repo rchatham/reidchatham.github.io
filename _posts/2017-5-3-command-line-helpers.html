@@ -69,7 +69,18 @@ title: Command Line Helpers
 <p><code class='code-inline'>git stash apply</code></p>
 <br>
 <p>Edit your commit history.</p>
-<p><code class='code-inline'>git rebase -i HEAD~<number-of-commits-to-rebase></code></p>
+<p><code class='code-inline'>git rebase -i HEAD~number-of-commits-to-rebase</code></p>
+<br>
+<p>Reset all uncommitted changes to a directory.</p>
+<p><code class='code-inline'>`git reset —hard`</code></p>
+<br>
+<p>Reset a specific file.</p>
+<p><code class='code-inline'>`git checkout -- filename # not staged for commit`</code></p>
+<p><code class='code-inline'>`git reset HEAD filename # unstage a file staged for commit`</code></p>
+<p><code class='code-inline'>`git checkout origin/master filename # already committed`</code></p>
+<br>
+<p>Reset branch to match remote branch (VERY DESTRUCTIVE).</p>
+<p><code class='code-inline'>`git reset --hard origin/master`</code></p>
 <br>
 <hr>
 <p><b>!!!TIP!!!</b></p>
