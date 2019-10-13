@@ -1,66 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
- <title>Reid Chatham</title>
- <meta charset="UTF-8">
- <meta name="description" content="Reid Chatham's personal website.">
- <meta name="keywords" content="iOS, iOS Developer, Reid Chatham, Reid, Chatham">
- <meta name="author" content="Reid Chatham">
- <link rel="stylesheet" href="/src/styles.css">
-
- <link rel="stylesheet" href="/src/highlight/styles/github.css">
- <script src="/src/highlight/highlight.pack.js"></script>
- <script>hljs.initHighlightingOnLoad();</script>
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-88659135-1', 'auto');
-  ga('send', 'pageview');
- </script>
-
-</head>
-
+{% include head.html %}
 <body>
-
-{% unless page.no_header %}
-<header>
-  <ul class="navigation">
-	<li><a href="/" title="Home">Reid Chatham</a></li>
-    <!-- <li><a href="/blog.html" title="Blog">Blog</a></li> -->
-    <!-- <li><a href="/insta.html" title="A selection of recent photography">Photos</a></li> -->
-  </ul>
-</header>
-{% endunless %}
-
-<div class="content top">
-{{ content }}
-</div>
-
-<footer>
- <p>
-  Find me on: <br>
-  <a href="/blog.html">Blog</a> | <a href="https://github.com/rchatham" target="_blank">GitHub <i class="fa fa-github" aria-hidden="true"></i></a> | <a href="https://www.linkedin.com/in/reidchatham" target="_blank">LinkedIn <i class="fa fa-linkedin" aria-hidden="true"></i></a> | <a href="https://twitter.com/reidamandweep" target="_blank">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a>
-	<!-- <a href="resume.html">resume</a> -->
- </p>
-<br>
- <pre class="quote">
- <!-- <blockquote> -->
-"The true sign of intelligence is not knowledge but imagination." 
-	-Albert Einstein
- <!-- </blockquote> -->
- </pre>
-
- <p>
-  More: <br>
-  <a href="https://cocoapods.org/owners/14440" target="_blank">Cocoa Pods</a> | <a href="https://medium.com/@rchatham" target="_blank">Medium <i class="fa fa-medium"></i></a>
- </p>
-</footer>
-
+	{% include header.html %}
+	<main>
+		<article>
+			{{ content }}
+		</article>
+		{% include footer.html %}
+	</main>
 </body>
+{% include autoreload-in-debug.html %}
 </html>
