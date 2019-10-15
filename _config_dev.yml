@@ -1,0 +1,15 @@
+# Site Settings
+title: Kurl Test
+email: reid.chatham@kurlapp.com
+description: >
+  A test site for Kurl.
+baseurl: '/kurl-test-site/'
+url: 'http://localhost:4000'
+twitter_username: kurlapp
+github_username: rchatham-kurl
+# Build Settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM
