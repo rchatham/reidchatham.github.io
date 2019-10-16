@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understanding Swift
+title: understanding swift
 ---
 
 # Understanding Swift

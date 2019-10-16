@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understanding Web - Intermediate
+title: understanding web - intermediate
 ---
 
 # Understanding Web - Intermediate

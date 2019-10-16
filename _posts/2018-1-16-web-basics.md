@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understanding Web - Basics
+title: understanding web - basics
 ---
 
 # Understanding Web - Basics

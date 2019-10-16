@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understanding the Command Line
+title: understanding the command line
 ---
 
 # Understanding the Command Line

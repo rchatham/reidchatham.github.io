@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mesh-Networking for a Better User Experience
+title: mesh-networking for a better user experience
 medium_link: https://medium.com/@rchatham/mesh-networking-for-a-better-user-experience-7baa519f7b34#.6bhm2acza
 ---
 

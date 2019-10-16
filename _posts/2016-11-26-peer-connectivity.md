@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "PeerConnectivity"
+title: PeerConnectivity
 medium_link: "https://medium.com/@rchatham/peerconnectivity-71ef96477abe#.6m15makjs"
 ---
 
