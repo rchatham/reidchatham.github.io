@@ -14,3 +14,8 @@ title: understanding web - intermediate
 
 **SSH**
 * [Configure SSH key based secure authentication: SSH.COM](https://www.ssh.com/ssh/key/)
+
+
+**Markdown**
+* [Markdown Cheatsheet · adam-p/markdown-here Wiki · GitHub](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)
+
