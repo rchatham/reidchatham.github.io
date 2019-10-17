@@ -13,4 +13,4 @@ title: understanding web - intermediate
 
 
 **SSH**
-* [Configure SSH key based secure authentication | SSH.COM](https://www.ssh.com/ssh/key/)
+* [Configure SSH key based secure authentication: SSH.COM](https://www.ssh.com/ssh/key/)
