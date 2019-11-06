@@ -15,6 +15,9 @@ This webpage is built using Jekyll and hosted on Github Pages.
 - [A curated list of awesome remote jobs and resources.](https://github.com/lukasz-madon/awesome-remote-job)
 - [A curated list of Microservice Architecture related principles and technologies.](https://github.com/mfornos/awesome-microservices)
 - [A curated list of Vapor-related awesome projects.](https://github.com/Cellane/awesome-vapor)
+- [📝 A curated list of awesome Raspberry Pi tools, projects, images and resources](https://github.com/thibmaek/awesome-raspberry-pi), [Awesome Raspberry Pi](https://awesome-rpi.netlify.com)
+- [Everything I know about running Swift on ARM (Raspberry Pi, BeagleBone, etc)](https://github.com/cellularmitosis/awesome-swift-arm)
+- [A community curated list of resources about Server Side Swift](https://github.com/OptionalValue/awesome-server-side-swift#packages)
 
 
 ### Tutorials
