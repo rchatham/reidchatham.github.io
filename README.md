@@ -25,4 +25,8 @@ This webpage is built using Jekyll and hosted on Github Pages.
 - [What are microservices?](https://microservices.io)
 
 
+### Learn
+- [A Guide to Making Your Own Circuit Board: Design Time (Part 1)](https://blog.upverter.com/2019/08/27/a-guide-to-making-your-own-circuit-board-design-time-part-1/)
+- [10 Best Open Source VPN Services](https://www.drfone.biz/vpn/open-source-vpn.html)
+- [10 Most Secure Linux Distros For Complete Privacy & Anonymity | 2017 Edition](https://fossbytes.com/secure-linux-distros-privacy-anonymity/)
 
