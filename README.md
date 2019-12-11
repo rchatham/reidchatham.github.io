@@ -6,7 +6,6 @@ This webpage is built using Jekyll and hosted on Github Pages.
     * [Make a Static Website with Jekyll](https://www.taniarascia.com/make-a-static-website-with-jekyll/)
 - Github Pages: [Working with GitHub Pages](https://help.github.com/en/categories/working-with-github-pages)
 
-
 ### Awesome Lists
 - [😎 Awesome lists about all kinds of interesting topics](https://github.com/sindresorhus/awesome)
 - [⚡️ Delightful Node.js packages and resources](https://github.com/sindresorhus/awesome-nodejs)
@@ -30,3 +29,6 @@ This webpage is built using Jekyll and hosted on Github Pages.
 - [10 Best Open Source VPN Services](https://www.drfone.biz/vpn/open-source-vpn.html)
 - [10 Most Secure Linux Distros For Complete Privacy & Anonymity | 2017 Edition](https://fossbytes.com/secure-linux-distros-privacy-anonymity/)
 
+
+### Goals
+- [Sunny Web Shops](http://sunnywebshops.com/welcome-to-sunny-web-shops)
