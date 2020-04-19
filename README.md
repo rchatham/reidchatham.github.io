@@ -1,4 +1,4 @@
-# rchatham.github.io
+# reidchatham.github.io
 
 This webpage is built using Jekyll and hosted on Github Pages.
 
