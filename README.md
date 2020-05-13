@@ -18,6 +18,9 @@ This webpage is built using Jekyll and hosted on Github Pages.
 - [📝 A curated list of awesome Raspberry Pi tools, projects, images and resources](https://github.com/thibmaek/awesome-raspberry-pi), [Awesome Raspberry Pi](https://awesome-rpi.netlify.com)
 - [Everything I know about running Swift on ARM (Raspberry Pi, BeagleBone, etc)](https://github.com/cellularmitosis/awesome-swift-arm)
 - [A community curated list of resources about Server Side Swift](https://github.com/OptionalValue/awesome-server-side-swift#packages)
+- [📱 Collaborative List of Open-Source iOS Apps](https://github.com/dkhamsing/open-source-ios-apps)
+- [A collaborative list of awesome Swift libraries and resources. Feel free to contribute!](https://github.com/matteocrippa/awesome-swift)
+- [A curated list of awesome iOS ecosystem, including Objective-C and Swift Projects](https://github.com/vsouza/awesome-ios)
 
 
 ### Tutorials
