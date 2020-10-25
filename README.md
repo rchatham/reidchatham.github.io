@@ -36,3 +36,14 @@ This webpage is built using Jekyll and hosted on Github Pages.
 
 ### Goals
 - [Sunny Web Shops](http://sunnywebshops.com/welcome-to-sunny-web-shops)
+- [Wokine](https://www.wokine.com/)
+- [Ben Bate](https://benbate.com/)
+- [Matthew Williams](http://findmatthew.com/)
+- [Lounge Lizard](https://www.loungelizard.com/)
+- [Sean Halpin](https://seanehalpin.github.io/sean-halpin/)
+- [Y78](http://y78.fr/)
+- [Rezo Zero](https://www.rezo-zero.com/)
+- [STRV](https://www.strv.com/)
+- [My Poor Brain](http://www.mypoorbrain.com/)
+- [Tobias Ahlin](https://tobiasahlin.com/)
+- [Femme Fatale](https://www.femmefatale.paris/en)
