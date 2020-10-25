@@ -34,6 +34,9 @@ This webpage is built using Jekyll and hosted on Github Pages.
 - [10 Most Secure Linux Distros For Complete Privacy & Anonymity | 2017 Edition](https://fossbytes.com/secure-linux-distros-privacy-anonymity/)
 
 
+### Resources
+- [Design and Developer Websites](https://www.fabriziovanmarciano.com/design-and-developer-websites/)
+
 ### Goals
 - [Sunny Web Shops](http://sunnywebshops.com/welcome-to-sunny-web-shops)
 - [Wokine](https://www.wokine.com/)
@@ -47,3 +50,4 @@ This webpage is built using Jekyll and hosted on Github Pages.
 - [My Poor Brain](http://www.mypoorbrain.com/)
 - [Tobias Ahlin](https://tobiasahlin.com/)
 - [Femme Fatale](https://www.femmefatale.paris/en)
+- [One Punch Agency](https://onepunch.agency/project/best-sommelier-of-the-world/)
