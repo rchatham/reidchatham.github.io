@@ -50,4 +50,4 @@ This webpage is built using Jekyll and hosted on Github Pages.
 - [My Poor Brain](http://www.mypoorbrain.com/)
 - [Tobias Ahlin](https://tobiasahlin.com/)
 - [Femme Fatale](https://www.femmefatale.paris/en)
-- [One Punch Agency](https://onepunch.agency/project/best-sommelier-of-the-world/)
+- [One Punch Agency](https://onepunch.agency/projects/projects/)
